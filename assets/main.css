@@ -6,22 +6,6 @@ body {
   padding: 0;
 }
 
-.watermark {
-  position: relative;
-}
-
-.watermark::after {
-  content: "real_skydish";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 3rem;
-  color: rgba(0, 0, 0, 0.2);
-  white-space: nowrap;
-  pointer-events: none;
-}
-
 header {
   background-color: #2e2e2e;
   padding: 20px;
@@ -52,44 +36,40 @@ header h3 {
   font-size: 1em;
 }
 
-main {
-  padding: 20px;
-  font-family: "Courier New", monospace;
+h2 {
   color: #cccccc;
-  line-height: 1.6;
-  letter-spacing: 0.1em;
+  padding: 0 20px;
 }
 
-section {
-  background-color: #2e2e2e;
-  padding: 5px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
 
-section h2 {
-  color: #cccccc;
-  border-bottom: 2px solid #444;
-  padding-bottom: 10px;
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
 }
 
-section p {
-  margin: 5px 0;
+th {
+    background-color: #3e3e3e;
+    color: #ffffff;
 }
 
-section a {
-  color: #ffffff;
-  text-decoration: underline;
+td {
+    background-color: #2e2e2e;
+    color: #cccccc;
 }
 
-section a:hover {
-  color: #cccccc;
+a {
+    color: #1e90ff;
+    text-decoration: none;
 }
 
-section hr {
-  margin: 20px 0;
-  border: 1px solid #444;
+a:hover {
+    text-decoration: underline;
 }
 
 footer {

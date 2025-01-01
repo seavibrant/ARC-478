@@ -1,0 +1,69 @@
+.watermark {
+  position: relative;
+}
+
+.watermark::after {
+  content: "real_skydish";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+body {
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  padding: 20px;
+  font-family: "Courier New", monospace;
+  color: #cccccc;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+section {
+    background-color: #2e2e2e;
+    padding: 5px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-height: 620px;
+    overflow-y: scroll;
+}
+
+section h2 {
+  color: #cccccc;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+section strong {
+  color: #ffffff;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: #cccccc;
+}
+
+section hr {
+  margin: 20px 0;
+  border: 1px solid #444;
+}
+
